@@ -1,0 +1,46 @@
+.flip-card {
+    perspective: 1000px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: inherit;
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background-color: teal;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: lightgrey;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flip-card.flipped {
+    transform: rotateY(180deg);
+  }
+  
