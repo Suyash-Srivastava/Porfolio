@@ -11,7 +11,9 @@ function FlippingCard({ front, back,imgComp }) {
   }
 
   return (
-    <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+    <div className={`flip-card ${isFlipped ? 'flipped' : ''}`}  
+    onMouseEnter={() => setIsFlipped(true)}
+    onMouseLeave={() => setIsFlipped(false)}>
       <div className="flip-card-inner">
         <div className="flip-card-front">
           {front}

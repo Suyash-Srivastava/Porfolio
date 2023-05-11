@@ -19,7 +19,7 @@ import technology from "../../public/technology.png";
 import { Spotify, ZirohDBCloudNew, ZirohDBCloudOld, Sparrow } from "./images";
 
 import { useState } from "react";
-import FlippingCard from "@/components/FlippingCard/FlippingCard";
+import FlippingCard from "@/components/FlippingCard/FlippingCard/FlippingCard";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -179,12 +179,16 @@ export default function Home() {
                 >
                   ZirohDB Cloud
                 </label>
-                <Image
-                  src={ZirohDBCloudNew}
-                  className="rounded-lg object-cover"
-                  alt="Ziroh DB Cloud "
-                  style={{ height: "100%", width: "100%" }}
+                <FlippingCard
+                  front={ <Image
+                    src={ZirohDBCloudNew}
+                    className="rounded-lg object-cover"
+                    alt="Ziroh DB Cloud "
+                    style={{ height: "100%", width: "100%" }}
+                  />}
+                  back={<p>Ziroh DB Cloud is a application which can be used by organiztions to store there data in major DBMSs</p>}
                 />
+                
               </div>
               <div className="basis-1/3 flex-1">
                 <label
@@ -193,11 +197,14 @@ export default function Home() {
                 >
                   Spotify Clone
                 </label>
-                <Image
-                  src={Spotify}
-                  className="rounded-lg object-cover"
-                  alt="spotify"
-                  style={{ height: "100%", width: "100%" }}
+                <FlippingCard
+                  front={ <Image
+                    src={Spotify}
+                    className="rounded-lg object-cover"
+                    alt="spotify"
+                    style={{ height: "100%", width: "100%" }}
+                  />}
+                  back={<p>A Spotify Clone which uses GraphQL api to get data and uses custom audio player to give seamless expirence of moving through the playlist</p>}
                 />
               </div>
               <div className="basis-1/3 flex-1">
@@ -207,11 +214,14 @@ export default function Home() {
                 >
                   ZirohDB Cloud
                 </label>
-                <Image
-                  src={ZirohDBCloudOld}
-                  className="rounded-lg object-cover"
-                  alt="Ziroh DB old"
-                  style={{ height: "100%", width: "100%" }}
+                <FlippingCard
+                  front={ <Image
+                    src={ZirohDBCloudOld}
+                    className="rounded-lg object-cover"
+                    alt="Ziroh DB old"
+                    style={{ height: "100%", width: "100%" }}
+                  />}
+                  back={<p>Old version of ZirohDB Cloud written in Angular , which i reworked with new UI and API integrations</p>}
                 />
               </div>
             </div>
