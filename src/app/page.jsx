@@ -205,7 +205,7 @@ export default function Home() {
                     alt="spotify"
                     style={{ height: "100%", width: "100%" }}
                   />}
-                  back={<p>A Spotify Clone which uses GraphQL api to get data and uses custom audio player to give seamless expirence of moving through the playlist</p>}
+                  back={<a href="https://vercel.com/suyash-srivastava/spotify-clone">A Spotify Clone which uses GraphQL api to get data and uses custom audio player to give seamless expirence of moving through the playlist</p>}
                 />
               </div>
               <div className="basis-1/3 flex-1">
