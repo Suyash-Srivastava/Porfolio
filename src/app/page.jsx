@@ -31,16 +31,17 @@ export default function Home() {
           <nav className="py-10 flex justify-between items-center">
             <h1 className="text-xl font-burtons">Suyash</h1>
             <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill
+              <a href="https://ghosty.hashnode.dev/" className="text-xl font-burtons">
+                Blog
+{/*                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer"
-                />
-              </li>
+                /> */}
+              </a>
               <li>
                 <a
+                   href="https://media.licdn.com/dms/document/media/C562DAQEs9PcgFsiOiQ/profile-treasury-document-pdf-analyzed/0/1679150036812?e=1692835200&v=beta&t=nu_c1cEaFRHiTXIFXHi0kLlKlDoo23OWSLaJf5t1Sng"
                   className="bg-gradient-to-r from-cyan-500 bg-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
                 >
                   Resume
                 </a>
@@ -82,7 +83,7 @@ export default function Home() {
             <h3 className="text-3xl py-1">What I do ?</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
               I am a developer who writes a
-              <span className="text-teal-500">clean and maintainable code</span>
+              <span className="text-teal-500"> clean and maintainable code </span>
               for high-scale applications keeping in mind the requirments for
               it. I have developed
               <span className="text-teal-500"> various applications </span> in
@@ -90,9 +91,9 @@ export default function Home() {
             </p>
             <p className="text-md py-2 leading-8 text-gray-800">
               I work with latest JavaScript frameworks such as
-              <span className="text-teal-500">React ,NextJS</span> and CSS
+              <span className="text-teal-500"> React ,NextJS </span> and CSS
               frameworks like
-              <span className="text-teal-500">Sass ,Tailwind</span> .
+              <span className="text-teal-500"> Sass ,Tailwind </span> .
             </p>
           </div>
           <div className="lg:flex gap-10 justify-center">
