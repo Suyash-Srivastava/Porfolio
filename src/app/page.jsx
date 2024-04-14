@@ -9,17 +9,20 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
+import Lottie from "react-lottie";
 
 import hashIcon from "../../public/hash-front-color.svg";
-import reactIcon from "../../public/react.png";
+// import reactIcon from "../../public/react.png";
+import reactIcon from "../../public/lottie/reactIcon.json";
+import tools from "../../public/lottie/tools.json";
+import Styling from "../../public/lottie/Styling.json";
 
 import ProfileImg from "../../public/Developer3D-removebg-preview.png";
 import technology from "../../public/technology.png";
 
-import { Spotify, ZirohDBCloudNew, ZirohDBCloudOld, Sparrow } from "./images";
-
 import { useState } from "react";
 import FlippingCard from "@/components/FlippingCard/FlippingCard/FlippingCard";
+import Project from "@/components/Project/Project";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,16 +34,19 @@ export default function Home() {
           <nav className="py-10 flex justify-between items-center">
             <h1 className="text-xl font-burtons">Suyash</h1>
             <ul className="flex items-center">
-              <a href="https://ghosty.hashnode.dev/" className="text-xl font-burtons">
+              <a
+                href="https://ghosty.hashnode.dev/"
+                className="text-xl font-burtons"
+              >
                 Blog
-{/*                 <BsFillMoonStarsFill
+                {/*                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer"
                 /> */}
               </a>
               <li>
                 <a
-                   href="https://media.licdn.com/dms/document/media/C562DAQEs9PcgFsiOiQ/profile-treasury-document-pdf-analyzed/0/1679150036812?e=1692835200&v=beta&t=nu_c1cEaFRHiTXIFXHi0kLlKlDoo23OWSLaJf5t1Sng"
+                  href="https://media.licdn.com/dms/document/media/C562DAQEs9PcgFsiOiQ/profile-treasury-document-pdf-analyzed/0/1679150036812?e=1692835200&v=beta&t=nu_c1cEaFRHiTXIFXHi0kLlKlDoo23OWSLaJf5t1Sng"
                   className="bg-gradient-to-r from-cyan-500 bg-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                 >
                   Resume
@@ -54,20 +60,23 @@ export default function Home() {
                 <h2 className="text-5xl py-2 text-teal-600 font-bold">
                   Suyash Srivastava
                 </h2>
-                <h3 className="text-2xl py-2 ">
-                  Frontend Developer & Designer
-                </h3>
+                <h3 className="text-2xl py-2 ">Frontend Developer</h3>
                 <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
-                  Experienced and passionate frontend developer with over 2
-                  years of experience building beautiful, responsive and
-                  user-friendly websites and applications. Proficient in HTML,
-                  CSS, JavaScript, and popular frontend frameworks such as
-                  React, NextJS.
+                  Experienced and passionate frontend developer with{" "}
+                  <span className="font-medium">
+                    over 3 years of experience
+                  </span>{" "}
+                  building beautiful, responsive and user-friendly websites and
+                  mobile applications. Proficient in &nbsp;
+                  <span className="font-medium">
+                    React, NextJS, React Native and TypeScript.
+                  </span>
                   <br />
                   <br /> Skilled in developing and implementing complex UI
                   designs with attention to detail and performance optimization.
                   Looking for new challenges to continue growing as a frontend
-                  developer and contribute to exciting projects.
+                  developer and help organizations build excellent applications
+                  with my skills.
                 </p>
               </div>
               <div className="w-auto">
@@ -79,45 +88,69 @@ export default function Home() {
           </div>
         </section>
         <section className="min-h-screen">
-          <div className="sm: mt-16">
-            <h3 className="text-3xl py-1">What I do ?</h3>
+          <div>
+            <h3 className="text-3xl py-1">What I bring to the Table ?</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
-              I am a developer who writes a
-              <span className="text-teal-500"> clean and maintainable code </span>
-              for high-scale applications keeping in mind the requirments for
+              <span className="text-teal-500">
+                {" "}
+                Clean and maintainable code{" "}
+              </span>
+              for high-scale applications, keeping in mind the requirements for
               it. I have developed
-              <span className="text-teal-500"> various applications </span> in
-              my journey which i am proud.
+              <span className="text-teal-500">
+                {" "}
+                multiple web/mobile applications{" "}
+              </span>{" "}
+              in my journey which i am proud.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800">
-              I work with latest JavaScript frameworks such as
-              <span className="text-teal-500"> React ,NextJS </span> and CSS
-              frameworks like
-              <span className="text-teal-500"> Sass ,Tailwind </span> .
+              I work with latest JS Frameworks such as
+              <span className="text-teal-500">
+                {" "}
+                React, NextJS, React Native{" "}
+              </span>{" "}
+              and CSS frameworks like
+              <span className="text-teal-500">
+                {" "}
+                sass, tailwind, shopify-restyle{" "}
+              </span>{" "}
+              .
             </p>
           </div>
           <div className="lg:flex gap-10 justify-center">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex flex-col items-center w-96 m-auto">
-              <Image
-                src={reactIcon}
+              <Lottie
+                options={{
+                  loop: false,
+                  autoplay: true,
+                  animationData: reactIcon,
+                }}
                 width={100}
                 height={100}
                 alt="tech stack"
               />
-              <h3>Frameworks</h3>
-              <p className="py-2 text-sm">What my apps work ...</p>
-              {/* <h4 className="py-4 text-teal-600">My Tech Stack</h4> */}
+              <h3>Frameworks / Libraries</h3>
+              <p className="py-2 text-sm"></p>
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">NextJS</p>
-              <p className="text-gray-800 py-1">Angular</p>
-              <p className="text-gray-800 py-1">JavaScript</p>
+              <p className="text-gray-800 py-1">TypeScript</p>
+              <p className="text-gray-800 py-1">React Native</p>
               <p></p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex flex-col items-center w-96 m-auto">
-              <Image src={hashIcon} width={100} height={100} alt="tech stack" />
+              <Lottie
+                options={{
+                  loop: false,
+                  autoplay: true,
+                  animationData: Styling,
+                }}
+                width={80}
+                height={80}
+                style={{ marginTop: 12, marginBottom: 12 }}
+                alt="tech stack"
+              />
               <h3>Styles</h3>
-              <p className="py-2 text-sm">How i style my applications ...</p>
-              {/* <h4 className="py-4 text-teal-600">My Tech Stack</h4> */}
+              <p className="py-2 text-sm"></p>
               <p className="text-gray-800 py-1">CSS</p>
               <p className="text-gray-800 py-1">Sass</p>
               <p className="text-gray-800 py-1">TailWind</p>
@@ -125,109 +158,27 @@ export default function Home() {
               <p></p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex flex-col items-center w-96 m-auto">
-              <Image
-                src={technology}
+              <Lottie
+                options={{
+                  loop: false,
+                  autoplay: true,
+                  animationData: tools,
+                }}
                 width={100}
                 height={100}
                 alt="tech stack"
               />
               <h3>Tools</h3>
-              <p className="py-2 text-sm">
-                What tools come in handy while developing my apps ...
-              </p>
-              {/* <h4 className="py-4 text-teal-600">My Tech Stack</h4> */}
-              <p className="text-gray-800 py-1">VS Code</p>
-              <p className="text-gray-800 py-1">Postman</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="py-2 text-sm"></p>
               <p className="text-gray-800 py-1">GIT</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Postman</p>
+              <p className="text-gray-800 py-1">VS Code</p>
               <p></p>
             </div>
           </div>
         </section>
-        <section>
-          <div
-            className="p-8"
-            style={{
-              border: "2px",
-              borderStyle: "solid",
-              borderRadius: "2rem",
-            }}
-          >
-            <h3 className="text-3xl py-1">Projects</h3>
-            <p>
-              These are the various appication i developed throughout my journey
-            </p>
-            <div className="flex flex-col gap-10 py-10 lg:flex-wrap lg:flex-row">
-              <div className="basis-1/3 flex-1">
-                <label className="font-burtons font-bold" htmlFor="zunu social">
-                  Social
-                </label>
-
-                <FlippingCard
-                  front={ <Image
-                    src={Sparrow}
-                    className="rounded-lg object-cover"
-                    alt="sparrow social media"
-                    style={{ height: "100%", width: "100%" }}
-                  />}
-                  back={<p>Sparrow a social media app with enchanced security</p>}
-                />
-              </div>
-              <div className="basis-1/3 flex-1">
-                <label
-                  className="font-burtons font-bold"
-                  htmlFor="Ziroh DB old"
-                >
-                  ZirohDB Cloud
-                </label>
-                <FlippingCard
-                  front={ <Image
-                    src={ZirohDBCloudNew}
-                    className="rounded-lg object-cover"
-                    alt="Ziroh DB Cloud "
-                    style={{ height: "100%", width: "100%" }}
-                  />}
-                  back={<p>Ziroh DB Cloud is a application which can be used by organiztions to store there data in major DBMSs</p>}
-                />
-                
-              </div>
-              <div className="basis-1/3 flex-1">
-                <label
-                  className="font-burtons font-bold"
-                  htmlFor="Spotify Clone"
-                >
-                  Spotify Clone
-                </label>
-                <FlippingCard
-                  front={ <Image
-                    src={Spotify}
-                    className="rounded-lg object-cover"
-                    alt="spotify"
-                    style={{ height: "100%", width: "100%" }}
-                  />}
-                  back={<a href="https://vercel.com/suyash-srivastava/spotify-clone">A Spotify Clone which uses GraphQL api to get data and uses custom audio player to give seamless expirence of moving through the playlist</p>}
-                />
-              </div>
-              <div className="basis-1/3 flex-1">
-                <label
-                  className="font-burtons font-bold"
-                  htmlFor="Ziroh DB old"
-                >
-                  ZirohDB Cloud
-                </label>
-                <FlippingCard
-                  front={ <Image
-                    src={ZirohDBCloudOld}
-                    className="rounded-lg object-cover"
-                    alt="Ziroh DB old"
-                    style={{ height: "100%", width: "100%" }}
-                  />}
-                  back={<p>Old version of ZirohDB Cloud written in Angular , which i reworked with new UI and API integrations</p>}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <Project />
       </main>
     </div>
   );
