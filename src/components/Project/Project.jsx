@@ -24,7 +24,9 @@ function Project() {
             </label>
             <ProjectCard
               imgSource={Sparrow}
-              projectInfo={"Sparrow a social media app with enhanced security"}
+              projectInfo={
+                "Sparrow a social media app with a encryption layer on top of it, which provides full privacy to the user."
+              }
             />
           </div>
           <div className="basis-1/3 flex-1">

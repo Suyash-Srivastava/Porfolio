@@ -29,9 +29,9 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-black">
+      <main className="bg-white px-12 py-6 md:px-20 lg:px-40 dark:bg-black">
         <section className="min-h-screen">
-          <nav className="py-10 flex justify-between items-center">
+          <nav className="flex justify-between items-center">
             <h1 className="text-xl font-burtons">Suyash</h1>
             <ul className="flex items-center">
               <a
@@ -46,7 +46,7 @@ export default function Home() {
               </a>
               <li>
                 <a
-                  href="https://media.licdn.com/dms/document/media/C562DAQEs9PcgFsiOiQ/profile-treasury-document-pdf-analyzed/0/1679150036812?e=1692835200&v=beta&t=nu_c1cEaFRHiTXIFXHi0kLlKlDoo23OWSLaJf5t1Sng"
+                  href="https://drive.google.com/file/d/17Yn6Kxhfmh_qoxjvaGGXDOy-pBNfCS1o/view?usp=sharing"
                   className="bg-gradient-to-r from-cyan-500 bg-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                 >
                   Resume
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex flex-col items-center w-96 m-auto">
               <Lottie
                 options={{
-                  loop: false,
+                  loop: true,
                   autoplay: true,
                   animationData: reactIcon,
                 }}
@@ -140,7 +140,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex flex-col items-center w-96 m-auto">
               <Lottie
                 options={{
-                  loop: false,
+                  loop: true,
                   autoplay: true,
                   animationData: Styling,
                 }}
@@ -160,7 +160,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex flex-col items-center w-96 m-auto">
               <Lottie
                 options={{
-                  loop: false,
+                  loop: true,
                   autoplay: true,
                   animationData: tools,
                 }}
